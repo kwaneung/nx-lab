@@ -1,7 +1,8 @@
 import playwright from 'eslint-plugin-playwright';
+
 import baseConfig from '../../eslint.config.mjs';
 
-export default [
+const eslintConfig = [
   playwright.configs['flat/recommended'],
   ...baseConfig,
   {
@@ -10,3 +11,5 @@ export default [
     rules: {},
   },
 ];
+
+export default eslintConfig;
