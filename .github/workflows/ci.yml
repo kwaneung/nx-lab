@@ -46,3 +46,9 @@ jobs:
       # Nx Cloud recommends fixes for failures to help you get CI green faster. Learn more: https://nx.dev/ci/features/self-healing-ci
       - run: pnpm exec nx fix-ci
         if: always()
+
+      # Deploy to Vercel when CI passes on main branch
+      - name: Deploy to Vercel
+        if: github.ref == 'refs/heads/main' && success()
+        run: |
+          curl -X POST https://api.vercel.com/v1/integrations/deploy/prj_31Ujt07DqQrx9CobvE4WT8dCPetb/UmoT9jRDRV
