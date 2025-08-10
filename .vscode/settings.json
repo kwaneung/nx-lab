@@ -23,5 +23,7 @@
   "files.trimFinalNewlines": true,
   "javascript.preferences.importModuleSpecifier": "non-relative",
   "typescript.preferences.importModuleSpecifier": "non-relative",
-  "tailwindCSS.validate": true
+  "tailwindCSS.validate": true,
+  // CSS 내장 유효성 검사에서 unknown at-rules만 비활성화
+  "css.lint.unknownAtRules": "ignore"
 }
