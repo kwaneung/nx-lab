@@ -3,7 +3,7 @@
 const SamplePage = () => {
   return (
     <div>
-      SamplePage
+      Sample Design Page
       <div className="flex flex-col gap-2">
         {' '}
         <button className="btn btn-xs">Xsmall</button>
